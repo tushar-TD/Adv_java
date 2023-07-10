@@ -1,0 +1,26 @@
+package Listeners;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+
+@WebListener
+public class BloggingAppListner implements ServletContextListener {
+
+    
+    public BloggingAppListner() {
+        
+    }
+
+	
+    public void contextDestroyed(ServletContextEvent sce)  { 
+        
+    }
+
+	
+    public void contextInitialized(ServletContextEvent sce)  { 
+         
+    }
+	
+}

@@ -1,0 +1,42 @@
+package Listners;
+
+import java.sql.Connection;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+
+@WebListener
+public class ShoppingAppListners implements ServletContextListener {
+
+	Connection con;
+	public void contextDestroyed(ServletContextEvent sce)
+	{
+		try
+		{
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+    public ShoppingAppListners() {
+        // TODO Auto-generated constructor stub
+    }
+
+	
+    public void contextDestroyed(ServletContextEvent sce)  { 
+         // TODO Auto-generated method stub
+    }
+
+    public void contextInitialized(ServletContextEvent sce)  { 
+         // TODO Auto-generated method stub
+    }
+	
+}

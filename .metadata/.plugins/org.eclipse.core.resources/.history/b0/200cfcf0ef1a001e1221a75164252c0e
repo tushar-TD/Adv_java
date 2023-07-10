@@ -1,0 +1,43 @@
+package First_servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet(
+		urlPatterns = { "/DAC" }, 
+		initParams = { 
+				@WebInitParam(name = "course", value = "PG-DAC")
+		})
+public class DAC_courses extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		PrintWriter out=response.getWriter();
+		
+		ServletConfig config=this.getServletConfig();
+		String subject=config.getInitParameter("subject");
+		
+		ServletContext ctx=getServletContext();
+		String provider=ctx.getInitParameter("Provider");
+		
+		out.println("Training on "+Subject+" by "+provider);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

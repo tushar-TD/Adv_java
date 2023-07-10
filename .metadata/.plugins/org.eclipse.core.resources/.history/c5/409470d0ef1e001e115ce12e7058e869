@@ -1,0 +1,73 @@
+package Listeners;
+
+public class Topic {
+	int tid;
+	String tname,tdesc,uid;
+	
+	public Topic(int tid, String tname, String tdesc, String uid) {
+		super();
+		this.tid = tid;
+		this.tname = tname;
+		this.tdesc = tdesc;
+		this.uid = uid;
+	}
+
+	/**
+	 * @return the tid
+	 */
+	public int getTid() {
+		return tid;
+	}
+
+	/**
+	 * @param tid the tid to set
+	 */
+	public void setTid(int tid) {
+		this.tid = tid;
+	}
+
+	/**
+	 * @return the tname
+	 */
+	public String getTname() {
+		return tname;
+	}
+
+	/**
+	 * @param tname the tname to set
+	 */
+	public void setTname(String tname) {
+		this.tname = tname;
+	}
+
+	/**
+	 * @return the tdesc
+	 */
+	public String getTdesc() {
+		return tdesc;
+	}
+
+	/**
+	 * @param tdesc the tdesc to set
+	 */
+	public void setTdesc(String tdesc) {
+		this.tdesc = tdesc;
+	}
+
+	/**
+	 * @return the uid
+	 */
+	public String getUid() {
+		return uid;
+	}
+
+	/**
+	 * @param uid the uid to set
+	 */
+	public void setUid(String uid) {
+		this.uid = uid;
+	}
+	
+	
+	
+}

@@ -1,0 +1,31 @@
+package Listeners;
+
+import java.sql.Connection;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+
+@WebListener
+public class BloggingAppListner implements ServletContextListener {
+	Connection con;
+  
+    public void contextDestroyed(ServletContextEvent sce)  { 
+        try
+        {
+        	con.close();
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        }
+    }
+
+	
+    public void contextInitialized(ServletContextEvent sce)  { 
+        String driver =sce.getServletContext().getInitParameter("driverclass");
+        String url=sce.getServletContext().getInitParameter("jdbcurl");
+    }
+	
+}

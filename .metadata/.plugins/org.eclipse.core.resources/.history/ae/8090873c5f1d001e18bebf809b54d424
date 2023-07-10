@@ -1,0 +1,140 @@
+package Scriptless;
+
+public class User {
+	private String uid,pwd,fname,lname,email,contact;
+	private Address address;
+	private int age;
+	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public User(String uid, String pwd, String fname, String lname, String email, String contact, Address address,
+			int age) {
+		super();
+		this.uid = uid;
+		this.pwd = pwd;
+		this.fname = fname;
+		this.lname = lname;
+		this.email = email;
+		this.contact = contact;
+		this.address = address;
+		this.age = age;
+	}
+
+	/**
+	 * @return the uid
+	 */
+	public String getUid() {
+		return uid;
+	}
+
+	/**
+	 * @param uid the uid to set
+	 */
+	public void setUid(String uid) {
+		this.uid = uid;
+	}
+
+	/**
+	 * @return the pwd
+	 */
+	public String getPwd() {
+		return pwd;
+	}
+
+	/**
+	 * @param pwd the pwd to set
+	 */
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	/**
+	 * @return the fname
+	 */
+	public String getFname() {
+		return fname;
+	}
+
+	/**
+	 * @param fname the fname to set
+	 */
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	/**
+	 * @return the lname
+	 */
+	public String getLname() {
+		return lname;
+	}
+
+	/**
+	 * @param lname the lname to set
+	 */
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * @return the contact
+	 */
+	public String getContact() {
+		return contact;
+	}
+
+	/**
+	 * @param contact the contact to set
+	 */
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	/**
+	 * @return the address
+	 */
+	public Address getAddress() {
+		return address;
+	}
+
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+
+	/**
+	 * @param age the age to set
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+	
+}

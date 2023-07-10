@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<form action="" method="post">
+<tr>
+<td>
+<label for="uid">Enter the User_ID</label></td>
+<td><input type="text" name="uid" id="uid"/></td>
+</tr>
+<tr>
+<td>
+<label for="pswd">Enter the Password</label></td>
+<td><input type="text" name="pswd" id="pswd"/></td>
+</tr>
+
+<tr>
+<td>
+<label for="fname">Enter the First name</label></td>
+<td><input type="text" name="fname" id="fname"/></td>
+</tr>
+
+<tr>
+<td>
+<label for="lname">Enter the Last_name</label></td>
+<td><input type="text" name="lname" id="lname"/></td>
+</tr>
+
+<tr>
+<td>
+<label for="cno">Enter the Contact_Number</label></td>
+<td><input type="text" name="cno" id="cno"/></td>
+</tr>
+</form>
+</table>
+</body>
+</html>

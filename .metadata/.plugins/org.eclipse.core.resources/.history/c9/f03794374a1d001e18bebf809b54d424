@@ -1,0 +1,5 @@
+package Scriptless;
+
+public class User {
+	private String uid,pwd,fname,lname,email,contact;
+}

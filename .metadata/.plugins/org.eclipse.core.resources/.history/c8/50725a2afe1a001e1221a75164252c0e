@@ -1,0 +1,48 @@
+package Listners;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+
+@WebListener
+public class ShoppingAppListners implements ServletContextListener {
+
+	Connection con;
+	public void contextDestroyed(ServletContextEvent sce)
+	{
+		try
+		{
+			con.close();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+    public ShoppingAppListners() {
+        // TODO Auto-generated constructor stub
+    	
+    }
+
+	
+    public void contextInitialized(ServletContextEvent sce)  { 
+    	String url=sce.getServletContext().getInitParameter("jdbcurl");
+    	String driver=sce.getServletContext().getInitParameter("driverclass");
+    	try 
+    	{
+    		Class.forName(driver);
+    		con=DriverManager.getConnection(url,user,pwd);
+    		
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();
+    	}
+    }
+	
+}
