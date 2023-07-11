@@ -9,7 +9,7 @@
 </head>
 <body>
 	<c:forEach var="topic" items="${topics}">
-		<a href="getComments?tid=${topic.tid}"> ${topic.tname} </a> <br/>
+		<a href="comments?tid=${topic.tid}"> ${topic.tname} </a> <br/>
 	</c:forEach>
 </body>
 </html>

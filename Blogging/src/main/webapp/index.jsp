@@ -10,6 +10,6 @@
 <body>
 		<a href="getTopics">View TopicS</a>
 		<br/>
-		<a href="getCommentS">View Comments</a>
+		<a href="comments">View Comments</a>
 </body>
 </html>

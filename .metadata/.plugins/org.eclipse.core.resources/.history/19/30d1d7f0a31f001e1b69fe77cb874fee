@@ -1,0 +1,14 @@
+package apps;
+
+public class ConnectionTest {
+
+	public static void main(String[] args) {
+
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String jdbcUrl = "jdbc:mysql://localhost:3306/test";
+		Connection con = DriverManager.getConnection(jdbcUrl, "root", "root");
+		System.out.println("Connection established");
+
+	}
+
+}
